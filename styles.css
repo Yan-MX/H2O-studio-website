@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Work+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #10123d;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-size: 1.8vw;
+}
+/* --- Header-- */
+.header {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  padding: 2em 2em;
+  font-family: "Lalezar", cursive;
+}
+.headerR {
+  display: flex;
+  justify-content: space-between;
+}
+.hright {
+  font-size: 1.5vw;
+  padding-top: 1.25vw;
+}
+.logo {
+  font-size: 4vw;
+  font-family: "Lalezar", cursive;
+}
+.logo:hover {
+  color: #f403fc;
+}
+.join {
+  padding-top: 0.5vw;
+  font-size: 2vw;
+  color: #05ffd2;
+  font-family: "Lalezar", cursive;
+}
+.join:hover {
+  color: #f403fc;
+}
+/* advertisement */
+.ad {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  padding: 2rem 8rem;
+}
+
+/* --- Footer-- */
+.fo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 4vw 2vw;
+}
+.copyright {
+  text-align: center;
+}
+/* general */
+img {
+  height: 35vw;
+}
+button {
+  background-color: whitesmoke;
+  color: #10123d;
+  height: 6vw;
+  padding: 1.5vw;
+  font-size: 2vw;
+  border-radius: 1vw;
+  margin: 1vw;
+  font-family: "Lalezar", cursive;
+  border: 0.3vw #05ffd2 solid;
+}
+button:hover {
+  color: #f403fc;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
