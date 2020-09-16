@@ -43,10 +43,37 @@
 /* advertisement */
 .ad {
   display: grid;
-  grid-template-columns: 35% 1fr;
-  padding: 2rem 8rem;
+  grid-template-columns: 12% 30% 1fr;
+  padding: 2rem 4rem 2rem 0rem;
 }
 
+.but {
+  margin-left: 20vw;
+}
+/* our programs */
+.programs {
+  margin-left: 4rem;
+}
+.program {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.h-pic {
+  height: 20vw;
+}
+.title {
+  margin-bottom: 5vw;
+}
+.program2 {
+  display: grid;
+  grid-template-columns: 1fr 35%;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: center;
+}
 /* --- Footer-- */
 .fo {
   display: flex;
@@ -61,17 +88,15 @@
 /* general */
 img {
   height: 35vw;
+  opacity: 70%;
+  border-radius: 10px;
 }
 button {
-  background-color: whitesmoke;
-  color: #10123d;
-  height: 6vw;
+  background-color: #05ffd2;
+  height: 5vw;
   padding: 1.5vw;
-  font-size: 2vw;
-  border-radius: 1vw;
-  margin: 1vw;
-  font-family: "Lalezar", cursive;
-  border: 0.3vw #05ffd2 solid;
+  font-size: 1.5vw;
+  color: #10123d;
 }
 button:hover {
   color: #f403fc;
