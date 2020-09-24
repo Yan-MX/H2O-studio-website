@@ -136,6 +136,13 @@ p {
 h4 {
   font-size: 2vw;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  cursor: pointer;
+}
 button {
   background-color: #05ffd2;
   height: 5vw;
@@ -143,7 +150,9 @@ button {
   font-size: 1.5vw;
   color: #10123d;
 }
-button:hover {
+button:hover,
+.title2:hover,
+p:hover {
   color: #f403fc;
 }
 .card {

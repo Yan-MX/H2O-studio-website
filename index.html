@@ -17,11 +17,12 @@
     <div class="header">
       <h3 class="logo">H2O studio</h3>
       <div class="headerR">
-        <h4 class="hright">Our Programs</h4>
-        <h4 class="hright">Price</h4>
-        <h4 class="hright">Schedule</h4>
-        <h4 class="hright">Contact</h4>
-        <h4 class="hright">Log in</h4>
+        <a href="#OUR_PROGRAM" class="hright">Our Programs</a>
+        <a class="hright" href="#OUR_PRICE">Price</a>
+        <a class="hright" href="#OUR_SCHEDULE">Schedule</a>
+        <a class="hright" href="#OUR_INSTRUCTOR">Instructors</a>
+        <a class="hright" href="#CONTACT">Contact</a>
+
         <h3 class="join">Join Now</h3>
       </div>
     </div>
@@ -87,8 +88,12 @@
         </div>
       </div>
     </div>
+    <!-- back to top -->
+    <button class="space" onclick="topFunction()" id="myBtn" title="Go to top">
+      Top
+    </button>
     <!-- Our program -->
-
+    <a id="OUR_PROGRAM"></a>
     <div class="program-container">
       <p class="title2">Our Programs</p>
       <div class="programs">
@@ -122,7 +127,43 @@
         </div>
       </div>
     </div>
+    <!-- our price -->
+    <a id="OUR_PRICE"></a>
+    <div class="program-container">
+      <p class="title2">Our Offer</p>
+      <table class="space">
+        <thead>
+          <th scope="col">Condition</th>
+          <th scope="col">5 times card</th>
+          <th scope="col">10 times card</th>
+          <th scope="col">4 times/month</th>
+          <th scope="col">8 times/month</th>
+          <th scope="col">Unlimited times/month</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Cost (Kr)</th>
+            <td>399</td>
+            <td>599</td>
+            <td>399</td>
+            <td>599</td>
+            <td>699</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th scope="row">Binding</th>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <!-- our instructor -->
+    <a id="OUR_INSTRUCTOR"></a>
     <div class="program-container">
       <p class="title2">Our Instructors</p>
       <div class="instructors">
@@ -161,6 +202,7 @@
       </div>
     </div>
     <!-- schedule -->
+    <a id="OUR_SCHEDULE"></a>
     <div class="program-container">
       <p class="title2">Our Schedule</p>
       <div class="sections">
@@ -244,6 +286,7 @@
       });
     </script>
     <!--- Footer -->
+    <a id="CONTACT"></a>
     <footer class="program-container">
       <div class="fo">
         <div>
@@ -276,6 +319,7 @@
         <h5 class="copyright">&copy design and built by Yan</h5>
       </div>
     </footer>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"
       integrity="sha512-CPonrVVNaBUnJ5fd+Oqh6zA9cx4gvAjz1XmjcuP5Atrg09az+vRm1O8khaiebTQ8brf6f550++WXoFOpDoHSKw=="
