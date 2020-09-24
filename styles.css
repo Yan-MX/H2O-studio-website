@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Work+Sans&family=Shadows+Into+Light:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -40,6 +40,10 @@
   color: #f403fc;
 }
 /* advertisement */
+.drawing {
+  height: 30vw;
+  margin-top: 10vw;
+}
 .title1 {
   font-size: 3.5vw;
   font-weight: black;
@@ -51,7 +55,7 @@
 .ad {
   height: 40vw;
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 15% 30% 1fr;
   padding: 2rem 4rem 2rem 0rem;
 }
 
@@ -60,7 +64,7 @@
 }
 /* our programs */
 .program-container {
-  margin: 8vw 5vw;
+  margin: 10vw 6vw;
   width: 75vw;
 }
 .programs {
@@ -83,6 +87,18 @@
   font-size: 2.4vw;
   padding-bottom: 1.5vw;
 }
+/* our studio */
+.space {
+  border: 1px solid white;
+  box-shadow: 0.5vw 1vw #f403fc;
+  padding-bottom: 3vw;
+}
+.title4 {
+  color: #05ffd2;
+  font-size: 4.5vw;
+  font-family: "Shadows Into Light", cursive;
+  text-shadow: 0.1vw 0.2vw #f403fc;
+}
 /* instructor */
 .photo {
   height: 20vw;
@@ -95,11 +111,18 @@
   flex-direction: row;
   margin-top: 2vw;
 }
+/* schedule */
+.sections {
+  height: 40vw;
+  display: grid;
+  grid-template-columns: 1fr 25%;
+  padding: 2rem 4rem 2rem 0rem;
+}
 /* --- Footer-- */
 .fo {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   padding: 4vw 2vw;
 }
@@ -107,7 +130,12 @@
   text-align: center;
 }
 /* general */
-
+p {
+  font-size: 1.5vw;
+}
+h4 {
+  font-size: 2vw;
+}
 button {
   background-color: #05ffd2;
   height: 5vw;
