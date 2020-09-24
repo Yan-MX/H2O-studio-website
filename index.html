@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H2O Studio</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--- Header-->
@@ -46,68 +52,171 @@
           />
         </svg>
       </div>
-      <div><img src="/img/dance2.png" alt="dance" /></div>
+
       <div class="card">
-        <p>
-          H2O studio was founded by three enthusiastic dancers in Oslo in 2020
-          during the Covid-19 pandemic. H2O Studio is open to anyone and
-          everyone. We welcome people of all ages, backgrounds, and skill
-          levels, as long as you enjoy dancing and sweating!
+        <h1 class="title1">
+          Start Dancing! Sign up now and receive a two weeks free trial with us.
+        </h1>
+        <p class="subtitle1">
+          H2O Studio is open to anyone and everyone. We welcome people of all
+          ages, backgrounds, and skill levels, as long as you enjoy dancing and
+          sweating!
         </p>
-        <button class="but">Becoming a Member</button>
+        <button class="but">Start a Free Trial</button>
       </div>
     </div>
     <!-- Our program -->
 
-    <div>
-      <h4 class="programs">Our Programs</h4>
-      <div class="program">
-        <img
-          src="./pics/vinicius-wiesehofer-Uti5WrBlWEA-unsplash.jpg"
-          alt="urban dance"
-        />
-        <div>
-          <h4 class="title">Urban</h4>
-          <p>
-            The Urban Dance style or Urban Dance Choreography stems mainly from
-            hip-hop and street dance styles (house, funk, pop, lock, and
-            breaking) and also draws inspiration from other dance styles, such
-            as: jazz, contemporary, tap, and more.
+    <div class="program-container">
+      <p class="title2">Our Programs</p>
+      <div class="programs">
+        <div class="program">
+          <img class="icon" src="/tap-dance.png" alt="urban dance" />
+
+          <p class="title2">Urban</p>
+          <p class="subtitle1">
+            The Urban Dance style Choreography stems mainly from hip-hop and
+            street dance styles (house, funk, pop, lock, and breaking) and also
+            draws inspiration from other dance styles.
           </p>
         </div>
-      </div>
-      <div class="program2">
-        <div>
-          <h4 class="title">Hip Hop</h4>
-          <p>
+        <div class="program">
+          <img class="icon" src="/capoeira.png" alt="hip hop dance" />
+          <p class="title2">Hip Hop</p>
+          <p class="subtitle1">
             Hip-hop dance refers to street dance styles primarily performed to
-            hip-hop music or that have evolved as part of hip-hop culture. It
-            includes a wide range of styles primarily breaking which was created
-            in the 1970s and made popular by dance crews in the United States.
+            hip-hop music or that have evolved as part of hip-hop culture.
           </p>
         </div>
-        <img
-          class="h-pic"
-          src="./pics/slim-emcee-O4o2in45udQ-unsplash.jpg"
-          alt="hip hop dance"
-        />
-      </div>
-      <div class="program">
-        <img
-          src="./pics/chris-yang-u-ONkFoHXAI-unsplash.jpg"
-          alt="jazz dance"
-        />
-        <div>
-          <h4 class="title">Jazz</h4>
-          <p>
-            Street Jazz dance has several forms. The most popular fusion
-            consists mainly of Hip-Hop dance, Contemporary dance and Jazz dance.
-            A dance form that focuses on versatility, Street Jazz will bring out
-            the dancer in you!
+        <div class="program">
+          <img class="icon" src="/dancing.png" alt="jazz dance" />
+
+          <p class="title2">Jazz</p>
+          <p class="subtitle1">
+            Street Jazz dance consists mainly of Hip-Hop dance, Contemporary
+            dance and Jazz dance. A dance form that focuses on versatility,
+            Street Jazz will bring out the dancer in you!
           </p>
         </div>
       </div>
     </div>
+    <!-- our instructor -->
+    <div class="program-container">
+      <p class="title2">Our Instructors</p>
+      <div class="instructors">
+        <div class="card">
+          <img
+            class="photo"
+            src="./pics/jeffery-erhunse-8j4lRnahQY4-unsplash.jpg"
+            alt="instructor photo"
+          />
+          <p>Chole</p>
+        </div>
+        <div class="card">
+          <img
+            class="photo"
+            src="./pics/chris-yang-Sjdk7TQ7e0I-unsplash.jpg"
+            alt="instructor photo"
+          />
+          <p>Jeong Pak</p>
+        </div>
+        <div class="card">
+          <img
+            class="photo"
+            src="./pics/chris-yang-u-ONkFoHXAI-unsplash.jpg"
+            alt="instructor photo"
+          />
+          <p>Naomi</p>
+        </div>
+        <div class="card">
+          <img
+            class="photo"
+            src="./pics/vinicius-wiesehofer-Uti5WrBlWEA-unsplash.jpg"
+            alt="instructor photo"
+          />
+          <p>Tora</p>
+        </div>
+      </div>
+    </div>
+    <!-- schedule -->
+    <div class="program-container">
+      <p class="title2">Our Schedule</p>
+      <div class="grid">
+        <table>
+          <thead>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday-Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">14:30</th>
+              <td>Urban Basic</td>
+              <td>Urban Basic</td>
+              <td>Urban Basic</td>
+              <td>Urban Basic</td>
+              <td><</td>
+            </tr>
+            <tr>
+              <th scope="row">16:00</th>
+              <td>Jazz</td>
+              <td>Jazz</td>
+              <td>Jazz</td>
+              <td>Jazz</td>
+              <td>Jazz</td>
+            </tr>
+            <tr>
+              <th scope="row">18:30</th>
+              <td>Hip Hop Basic</td>
+              <td>Hip Hop Basic</td>
+              <td>Hip Hop advanced</td>
+              <td>Hip Hop (Clyde)</td>
+              <td>Hip Hop Pop up</td>
+            </tr>
+            <tr>
+              <th scope="row">20:00</th>
+              <td>Jazz</td>
+              <td>VIP Jazz</td>
+              <td></td>
+              <td>VIP Jazz</td>
+              <td>VIP Urban</td>
+            </tr>
+            <tr>
+              <th scope="row">20:10</th>
+              <td>Choreography</td>
+              <td>Choreography</td>
+              <td>Choreography</td>
+              <td>Choreography</td>
+              <td>Choreography</td>
+            </tr>
+            <tr>
+              <th scope="row">21:00</th>
+              <td></td>
+              <td></td>
+              <td>Jazz Night</td>
+              <td>Jazz Night</td>
+              <td>Jazz Night</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- google map -->
+
+    <div id="map" style="width: 90%; height: 30vw"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoieWFuamkiLCJhIjoiY2tmZHdkaWgwMDFlbzJ4bGkyamQ4b2I2cSJ9.HmbW0QkYKSSK_q6f_d1yjw";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
+        center: [10.70331, 59.91146], // starting position [lng, lat]
+        zoom: 12, // starting zoom
+      });
+    </script>
     <!--- Footer -->
     <footer>
       <div class="fo">

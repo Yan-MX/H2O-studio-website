@@ -7,7 +7,6 @@
   background-color: #10123d;
   font-family: "Work Sans", sans-serif;
   color: white;
-  font-size: 1.8vw;
 }
 /* --- Header-- */
 .header {
@@ -41,9 +40,18 @@
   color: #f403fc;
 }
 /* advertisement */
+.title1 {
+  font-size: 3.5vw;
+  font-weight: black;
+}
+.subtitle1 {
+  font-size: 1.2vw;
+  color: #83bbdc;
+}
 .ad {
+  height: 40vw;
   display: grid;
-  grid-template-columns: 12% 30% 1fr;
+  grid-template-columns: 40% 1fr;
   padding: 2rem 4rem 2rem 0rem;
 }
 
@@ -51,28 +59,41 @@
   margin-left: 20vw;
 }
 /* our programs */
+.program-container {
+  margin: 8vw 5vw;
+  width: 75vw;
+}
 .programs {
-  margin-left: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .program {
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw 4vw;
   justify-content: center;
-  align-items: center;
 }
-.h-pic {
+.icon {
+  height: 8vw;
+  width: 8vw;
+  padding-bottom: 1.5vw;
+}
+.title2 {
+  font-size: 2.4vw;
+  padding-bottom: 1.5vw;
+}
+/* instructor */
+.photo {
   height: 20vw;
+  border-radius: 5vw;
+  opacity: 60%;
+  filter: grayscale(50%);
 }
-.title {
-  margin-bottom: 5vw;
-}
-.program2 {
-  display: grid;
-  grid-template-columns: 1fr 35%;
-  padding: 2rem 4rem;
-  justify-content: center;
-  align-items: center;
+.instructors {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vw;
 }
 /* --- Footer-- */
 .fo {
@@ -86,11 +107,7 @@
   text-align: center;
 }
 /* general */
-img {
-  height: 35vw;
-  opacity: 70%;
-  border-radius: 10px;
-}
+
 button {
   background-color: #05ffd2;
   height: 5vw;
@@ -106,4 +123,16 @@ button:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 50vw;
+}
+/* schedule */
+table {
+  font-size: 1.2vw;
+  margin: 1.5vw;
+  border: 1px solid #f403fc;
+}
+th,
+td {
+  padding: 0.5vw;
+  border: 1px solid white;
 }
