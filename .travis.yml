@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '12'
+script:
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: h2o-studio
+  api_key:
+    secure: 0p+R6M+MsgImOseK7MO3ZvPH/Yh9fYR7SMLofgwP3sY9EuzEZjSL+nX6AZPhzZ8ouHKM3hjO+Y+tFPBjbwX8EsP40HBv8nlP1wG+e06l+0rjRMGOeQ32DOt1Lei9UKAIuFb6UZxqCpmtxALudCPsAvJ/UOJjIlN88uzcwx9YHOetkeUsHepoEdRgNH3X/aCNIVmqEpkGLaDBIDdBWCO6IBCFQeN+VAGw971aTsklVeSTsNe/L6zWS4bMF8r2uU6UHukopfsNMWNuakQIIwT6HxOUpPdye8OYz1HEUV6uVJWpZZtKfv/eYAqUx/vJ+4h1YHssO60imWIRvN7CeGCzrjjMPTEkJYj0OVHiSek2/wUya4W6mteksGw4SmtzTLsbwwfIhZMz1MKh9nIxbbx0ZnsAe2L0ID3ksJtiHK+K/PRS7idmYGHMJoj4qxh8dRTYgsjkL6ozDQCufX1UqFVWJv71f5ZMSvnQRK2v03VlwjkQKCcouuLcmG2YKMRVrlaeNEjR6PmgC/R6R/QNMm+/GBj5BeLGHgwCpwSy1JWNDBtvuGmTiCRO3F5t79rok4AcsEo7Q90ZiXJgXSuS7v4xHnFTdD/hcxb6SF07Fj2iTLCuSw23Fq1G++9LjpzTujwrXvmNEvvlnIynYvG4EXoerZJ77nY/j7thw/OPBpbVAw8=
